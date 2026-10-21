@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Basketball Trainer - Results</title>
+
+    <link
+        rel="stylesheet"
+        href="4.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+        <div class="brand">
+
+            <div class="brand-ball">
+                🏀
+            </div>
+
+            <div class="brand-text">
+
+                <h1>
+                    BASKETBALL
+                    <span>TRAINER</span>
+                </h1>
+
+            </div>
+
+        </div>
+
+
+        <div class="current-goal">
+
+            <div class="goal-target">
+                🎯
+            </div>
+
+            <div>
+
+                <div class="goal-label">
+                    Current Goal
+                </div>
+
+                <div
+                    class="goal-value"
+                    id="current-goal"
+                >
+                    80% Accuracy
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- RESULTS -->
+
+    <main class="results-page">
+
+        <div class="results-container">
+
+
+            <!-- TITLE -->
+
+            <div class="results-header">
+
+                <button
+                    class="back-button"
+                    id="results-back"
+                >
+                    ← Back
+                </button>
+
+
+                <div class="results-title">
+
+                    <div class="results-title-icon">
+                        📊
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Shooting Results
+                        </h2>
+
+                        <p>
+                            Here's how you performed in your session.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MAIN ACCURACY -->
+
+            <section class="accuracy-card">
+
+                <div class="accuracy-circle">
+
+                    <strong id="result-accuracy">
+                        0%
+                    </strong>
+
+                    <span>
+                        Accuracy
+                    </span>
+
+                </div>
+
+
+                <div class="accuracy-info">
+
+                    <span class="result-label">
+                        SESSION PERFORMANCE
+                    </span>
+
+                    <h3 id="result-message">
+                        Keep working!
+                    </h3>
+
+                    <p id="result-summary">
+                        Complete a shooting session to see your results.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- STATS -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon make-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Shots Made
+                        </span>
+
+                        <strong id="result-makes">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon miss-icon">
+                        ✕
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Shots Missed
+                        </span>
+
+                        <strong id="result-misses">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon total-icon">
+                        🏀
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Shots
+                        </span>
+
+                        <strong id="result-total">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- GOAL PROGRESS -->
+
+            <section class="result-card">
+
+                <div class="card-heading">
+
+                    <div class="card-heading-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Goal Progress
+                        </h3>
+
+                        <p>
+                            How close you were to your target.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-info">
+
+                    <span>
+                        Your Accuracy
+                    </span>
+
+                    <strong id="performance-accuracy">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="performance-fill"
+                    ></div>
+
+                </div>
+
+
+                <div class="goal-result">
+
+                    <span>
+                        Goal:
+                    </span>
+
+                    <strong id="goal-result">
+                        80%
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ADVICE -->
+
+            <section class="advice-card">
+
+                <div class="advice-icon">
+                    💡
+                </div>
+
+                <div>
+
+                    <span>
+                        COACH'S ADVICE
+                    </span>
+
+                    <h3>
+                        What to work on
+                    </h3>
+
+                    <p id="shooting-advice">
+                        Complete a shooting session to receive personalized advice.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- DRILLS -->
+
+            <section class="result-card">
+
+                <div class="card-heading">
+
+                    <div class="card-heading-icon">
+                        🏀
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Recommended Drills
+                        </h3>
+
+                        <p>
+                            Drills that can help improve your shooting.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="drill-list">
+
+
+                    <div class="drill">
+
+                        <div class="drill-number">
+                            1
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Form Shooting
+                            </h4>
+
+                            <p>
+                                Focus on your shooting form and follow-through.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="drill">
+
+                        <div class="drill-number">
+                            2
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Spot Shooting
+                            </h4>
+
+                            <p>
+                                Take repeated shots from the same spots around the court.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="drill">
+
+                        <div class="drill-number">
+                            3
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Free Throw Practice
+                            </h4>
+
+                            <p>
+                                Work on consistency from the free throw line.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- NEW SESSION -->
+
+            <button
+                class="new-session-button"
+                id="new-session"
+            >
+
+                🏀
+
+                Start New Shooting Session
+
+            </button>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- BOTTOM NAV -->
+
+    <nav class="bottom-nav">
+
+        <a
+            href="../index.html"
+            class="nav-item"
+        >
+
+            <span>
+                ⌂
+            </span>
+
+            Home
+
+        </a>
+
+
+        <a
+            href="../setup/setup.html"
+            class="nav-item"
+        >
+
+            <span>
+                🎯
+            </span>
+
+            Goal
+
+        </a>
+
+
+        <a
+            href="../shooting/shooting.html"
+            class="nav-item"
+        >
+
+            <span>
+                🏀
+            </span>
+
+            Shooting
+
+        </a>
+
+
+        <a
+            href="results.html"
+            class="nav-item active"
+        >
+
+            <span>
+                ▥
+            </span>
+
+            Results
+
+        </a>
+
+
+        <a
+            href="../drills/drills.html"
+            class="nav-item"
+        >
+
+            <span>
+                △
+            </span>
+
+            Drills
+
+        </a>
+
+
+        <a
+            href="../history/history.html"
+            class="nav-item"
+        >
+
+            <span>
+                ◷
+            </span>
+
+            History
+
+        </a>
+
+    </nav>
+
+
+    <script src="4.js"></script>
+
+</body>
+
+</html>
